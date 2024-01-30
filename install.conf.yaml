@@ -1,0 +1,25 @@
+---
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean: ['~', '~/.config']
+
+- shell:
+  - [sh preinstall, Running pre installation script]
+
+- link:
+    ~/.bashrc:
+    ~/.config/:
+      glob: true
+      path: config/*
+    ~/.gitconfig:
+    ~/.vimrc:
+    ~/.zshrc:
+      force: true
+      path: zshrc
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+...
