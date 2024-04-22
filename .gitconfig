@@ -1,0 +1,10 @@
+[include]
+	path = ~/.gitconfig_local
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg]
+	program = gpg
