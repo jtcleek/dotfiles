@@ -1,0 +1,6 @@
+[user]
+    name = jtcleek
+    email = me@jtcleek.com
+    signingkey = 29960962F500442B
+[core]
+    sshCommand = ssh.exe
