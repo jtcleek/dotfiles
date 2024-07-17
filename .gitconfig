@@ -1,5 +1,3 @@
-[include]
-	path = ~/.gitconfig_local
 [init]
 	defaultBranch = main
 [commit]
@@ -8,3 +6,7 @@
 	gpgsign = true
 [gpg]
 	program = gpg
+
+; Machine specific configuration. Needs to be at EOF.
+[include]
+	path = ~/.gitconfig_local
