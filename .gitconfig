@@ -1,6 +1,6 @@
 [user]
-    name = jtcleek
-    email = me@jtcleek.com
+	name = jtcleek
+	email = me@jtcleek.com
 [init]
 	defaultBranch = main
 [commit]
