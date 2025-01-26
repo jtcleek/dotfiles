@@ -15,3 +15,8 @@ else
     PS1='[\u@\h \W]\$ '
 fi
 unset color_prompt
+
+# History
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+export HISTCONTROL=ignoreboth:erasedups
