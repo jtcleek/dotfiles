@@ -1,4 +1,7 @@
 # Environment variables
+export HISTCONTROL=ignoreboth:erasedups
+export HISTSIZE=10000
+export HISTFILESIZE=20000
 export GPG_TTY=$(tty)
 export EDITOR="vim"
 export TERMINAL="alacritty"
