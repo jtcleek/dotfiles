@@ -7,6 +7,8 @@
 	gpgsign = true
 [tag]
 	gpgsign = true
+[push]
+	autoSetupRemote = true
 
 ; Machine specific configuration. Needs to be at EOF.
 [include]
