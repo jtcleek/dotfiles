@@ -10,5 +10,5 @@ if [ -e ~/.1password/agent.sock ]; then
 fi
 
 if [ -r ~/.bashrc ]; then
-        source ~/.bashrc
+	source ~/.bashrc
 fi
