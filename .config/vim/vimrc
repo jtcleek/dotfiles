@@ -1,0 +1,35 @@
+syntax on
+
+" Disable mouse support
+set mouse-=a
+
+" Tabs to be 4 spaces
+set tabstop=4        " How many spaces a tab counts for
+set shiftwidth=4     " Indentation width for auto-indents
+set expandtab        " Use spaces instead of tabs
+
+" Enable filetype-specific plugins and indentation
+filetype indent plugin on
+
+" YAML-specific settings
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
+
+" Show matching parentheses and brackets
+set showmatch            " Highlight matching parentheses/brackets
+
+" Highlight search results
+set hlsearch             " Highlight search matches
+set incsearch            " Incremental search (shows results as you type)
+
+" Enable case-insensitive search
+set ignorecase           " Ignore case in search
+
+" Enable persistent undo (undo history is saved across sessions)
+set undofile             " Save undo history to a file
+set undodir=~/.vim/undo  " Specify undo file location (make sure to create this dir)
+
+" Disable swap files (optional, depending on your needs)
+set noswapfile           " Disable swap files (careful, as this disables recovery)
+
+" Enable automatic indentation on new lines
+set smartindent          " Enable smart indentation (useful for languages like Python)
