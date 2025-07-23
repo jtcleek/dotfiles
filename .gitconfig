@@ -1,0 +1,43 @@
+[user]
+    name = jtcleek
+    email = me@jtcleek.com
+[init]
+    defaultBranch = main
+[commit]
+    gpgsign = true
+    verbose = true
+[tag]
+    gpgsign = true
+    sort = version:refname
+[push]
+    autoSetupRemote = true
+    default = simple
+    followTags = true
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+[help]
+    autocorrect = prompt
+[rerere]
+    enabled = true
+    autoupdate = true
+[core]
+    excludesfile = ~/.gitignore
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
+
+; Machine specific configuration. Needs to be at EOF.
+[include]
+    path = ~/.gitconfig_local
