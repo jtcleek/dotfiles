@@ -18,6 +18,11 @@ export GPG_TTY=$(tty)
 export TERMINAL='alacritty'
 export BROWSER='librewolf'
 
+# Shell Options
+shopt -s cdspell
+shopt -s checkwinsize
+shopt -s extglob
+
 # Aliases
 [[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
 
