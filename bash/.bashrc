@@ -18,6 +18,10 @@ export GPG_TTY=$(tty)
 export TERMINAL='alacritty'
 export BROWSER='librewolf'
 
+# Enable history expansion with space
+# E.g. typing !!<space> will replace the !! with your last command
+bind Space:magic-space
+
 # Shell Options
 shopt -s cdspell
 shopt -s checkwinsize
