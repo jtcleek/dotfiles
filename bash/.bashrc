@@ -12,6 +12,7 @@ export GREP_COLORS='mt=1;36'
 export HISTCONTROL='ignoredups'
 export HISTSIZE=5000
 export HISTFILESIZE=5000
+export HISTIGNORE='&:[ ]*:exit:l:ls:ll:la:bg:fg:cd:pwd:history:clear'
 export PAGER='less'
 export TZ='America/Chicago'
 export GPG_TTY=$(tty)
