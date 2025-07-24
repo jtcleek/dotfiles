@@ -14,6 +14,3 @@ alias ll='ls -lhF --group-directories-first'
 alias grep='grep --color=auto'
 alias egrep='grep -E'
 alias fgrep='grep -F'
-
-# dotfiles
-alias udf='echo "Updating dotfiles..." && stow -d ~/.dotfiles -t ~ .'
