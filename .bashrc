@@ -31,6 +31,9 @@ shopt -s extglob
 
 PS1='[\u@\h \W]\$ '
 
+# 1Password
+[[ -e ~/.1password/agent.sock ]] && export SSH_AUTH_SOCK=~/.1password/agent.sock
+
 # Atuin
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 [[ $(type atuin 2>/dev/null) ]] && eval "$(atuin init bash)"
