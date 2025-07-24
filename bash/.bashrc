@@ -29,7 +29,29 @@ shopt -s extglob
 # Completions
 [[ -d ~/.bash_completion.d ]] && for f in ~/.bash_completion.d/*; do source $f; done
 
-PS1='[\u@\h \W]\$ '
+# Plain prompt for TTY (console) logins
+if [[ "$TERM" == "linux" ]]; then
+    PS1='\h:\w\$ '
+else
+    # If __git_ps1 is available
+    if type __git_ps1 &>/dev/null; then
+        # Git prompt settings
+        export GIT_PS1_SHOWDIRTYSTATE=1       # Shows '*' and '+'
+        export GIT_PS1_SHOWSTASHSTATE=1       # Shows '$'
+        export GIT_PS1_SHOWUNTRACKEDFILES=1   # Shows '%'
+        export GIT_PS1_SHOWUPSTREAM="auto"    # Shows '=', '>', '<', or '<>'
+        export GIT_PS1_SHOWCOLORHINTS=1       # Enables colored formatting
+
+        # ANSI colors
+        CYAN='\[\033[01;36m\]'
+        RESET='\[\033[00m\]'
+
+        PS1="\h:${CYAN}\w${RESET}\$(__git_ps1 ' (%s)')\$ "
+    else
+        # Fallback prompt without git or colors
+        PS1='\h:\w\$ '
+    fi
+fi
 
 # 1Password
 [[ -e ~/.1password/agent.sock ]] && export SSH_AUTH_SOCK=~/.1password/agent.sock
