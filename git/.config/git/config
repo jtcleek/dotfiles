@@ -40,4 +40,4 @@
 
 ; Machine specific configuration. Needs to be at EOF.
 [include]
-    path = ~/.gitconfig_local
+    path = ~/.gitconfig.local
