@@ -32,6 +32,7 @@
     enabled = true
     autoupdate = true
 [core]
+    editor = vim
     excludesfile = ~/.config/git/ignore
 [rebase]
     autoSquash = true
