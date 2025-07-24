@@ -26,6 +26,7 @@ bind Space:magic-space
 # Shell Options
 shopt -s cdspell
 shopt -s checkwinsize
+shopt -s cmdhist
 shopt -s extglob
 
 # Aliases
