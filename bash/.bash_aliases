@@ -14,3 +14,13 @@ alias ll='ls -lhF --group-directories-first'
 alias grep='grep --color=auto'
 alias egrep='grep -E'
 alias fgrep='grep -F'
+
+# git
+alias g='git'
+alias ga='git add'
+alias gc='git commit'
+alias gd='git diff'
+alias gl='git log --decorate --oneline --graph'
+alias gp='git push origin HEAD'
+alias gs='git status --short'
+alias gS='git status'
