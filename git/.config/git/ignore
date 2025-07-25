@@ -13,10 +13,17 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
+# editors
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+.netrwhist
+*~
+.vscode/
+
 # Others
 .git/
 .gitconfig.local
-*.sw[po]
 *.log
 .python-version
 .bundle
