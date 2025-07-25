@@ -34,6 +34,9 @@
 [core]
     editor = vim
     excludesfile = ~/.config/git/ignore
+    whitespace = blank-at-eol,space-before-tab,-indent-with-non-tab,-tab-in-indent,blank-at-eof
+[apply]
+    whitespace = fix
 [rebase]
     autoSquash = true
     autoStash = true
