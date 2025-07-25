@@ -14,7 +14,7 @@ if [[ -d "$HOME/.local/bin" ]] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-. "$HOME/.atuin/bin/env"
+[[ -f ~/.atuin/bin/env ]] && . ~/.atuin/bin/env
 
 # Automatically start X session when logging in on tty1
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 && -f ~/.xinitrc && $(type startx 2>/dev/null) ]] && exec startx > ~/.xsession-errors 2>&1
