@@ -33,3 +33,7 @@ set noswapfile           " Disable swap files (careful, as this disables recover
 
 " Enable automatic indentation on new lines
 set smartindent          " Enable smart indentation (useful for languages like Python)
+
+" Enable current line number and relative line numbers
+set number
+set relativenumber
