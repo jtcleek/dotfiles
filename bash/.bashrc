@@ -34,6 +34,7 @@ shopt -s extglob
 
 # Completions
 [[ -d ~/.bash_completion.d ]] && for f in ~/.bash_completion.d/*; do source $f; done
+[[ -f ~/.bash_completion.local ]] && source ~/.bash_completion.local
 
 # Plain prompt for TTY (console) logins
 if [[ "$TERM" == "linux" ]]; then
