@@ -24,3 +24,7 @@ alias gl='git log --decorate --oneline --graph'
 alias gp='git push origin HEAD'
 alias gs='git status --short'
 alias gS='git status'
+
+# 1password
+alias op-signin='eval $(op signin)'
+alias op-logout='op signout && unset $(compgen -v | grep "OP_SESSION")'
